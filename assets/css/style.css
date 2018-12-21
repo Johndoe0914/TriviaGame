@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    
+
+}
+.grid {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid rebeccapurple;
+    box-shadow: 10px 15px 5px white;;
+    
+}
+.grid h1{
+    font-family: sans-serif;
+    background-color: purple;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    border-radius: 50px;
+
+}
+#start {
+    position: relative;
+    background-color: #932797;
+    width: 250px;
+    font-size: 20px;
+    color: #ffffff;
+    border: 1px solid #1d3c6a;
+    border-radius: 10px;
+    margin: center;
+    padding: 10px 10px;
+    text-align: center;
+    
+}
+#counter{
+    color: white;
+    text-align: center;
+}
+#answer-button{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+#subgrid{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#start:hover{
+   cursor: pointer;
+   background-color: red;
+
+}
+#start:focus{
+    outline: 0;
+}
+#reset{
+    background-color: red;
+}
