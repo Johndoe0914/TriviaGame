@@ -1,64 +1,89 @@
 body{
-    background-color: black;
+    background-color: white;
     
 
 }
 .grid {
     width: 600px;
     height: 500px;
-    margin: 0 auto;
+    margin: 30px auto;
+
     background-color: black;
     padding: 10px 50px 50px 50px;
-    border: 2px solid rebeccapurple;
-    box-shadow: 10px 15px 5px white;;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     
 }
 .grid h1{
     font-family: sans-serif;
-    background-color: purple;
     font-size: 60px;
     text-align: center;
     color: #ffffff;
     padding: 2px 0px;
-    border-radius: 50px;
+ 
 
 }
 #start {
     position: relative;
-    background-color: #932797;
+    margin-top: 90px;
+    background-color:crimson;
     width: 250px;
     font-size: 20px;
-    color: #ffffff;
+    color: Blue;
     border: 1px solid #1d3c6a;
     border-radius: 10px;
     margin: center;
     padding: 10px 10px;
     text-align: center;
     
+    
 }
 #counter{
     color: white;
+    text-emphasis-style: bold;
     text-align: center;
 }
-#answer-button{
-    text-align: center;
+.answer-button{
+    position: relative;
+    margin: auto;
+    height: 20px;
+    padding: 10px;
+    color: yellow;
+    width: 80%;
+    background-color: black;
+    border-style: dotted;
+    border-color: white;
     margin-bottom: 10px;
     
 }
+.answer-button:hover {
+    cursor: pointer;
+     background-color: lightblue;
+     color: black;
+}
 #subgrid{
-    color: white;
+    text-emphasis-style: bold;
+    color: yellow;
     font-size: 20px;
     text-align: center;
 }
 
 #start:hover{
    cursor: pointer;
-   background-color: red;
+   background-color: black;
 
 }
 #start:focus{
     outline: 0;
 }
 #reset{
-    background-color: red;
+    text-emphasis-style: bold;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+#reset:hover {
+    color: black;
+    background-color: lightblue;
+    cursor: pointer;
 }

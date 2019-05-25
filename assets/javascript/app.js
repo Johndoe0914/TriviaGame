@@ -56,12 +56,13 @@ var game = {
     unanswered:0,
     countdown: function(){
         game.counter--;
-        $("#counter").html("<h3>You Have "+game.counter+"Seconds Left</h3>");
+        $("#counter").html("<h3>You Have "+game.counter+" Seconds Left</h3>");
         if(game.counter<=0){
             console.log("Times up!");
             game.timeUp();
         }
  },
+
 
 loadQuestion: function(){
     game.counter = 30;
@@ -84,8 +85,9 @@ nextQuestion: function(){
 },
 timeUp: function(){
     clearInterval(timer);
+    $("#counter").hide();
     game.unanswered++;
-    $("#subgrid").html("<h2 your out of time!");
+    $("#subgrid").html("<h2> your out of time!</h2>");
     $("#subgrid").append("<h3>The correct answer was"+question[game.currentQuestion].correctAnswer+"</h3>");
     if(game.currentQuestion==questions.length-1){
         setTimeout(game.results, 3*1000)
@@ -137,6 +139,7 @@ answerIncorrectly: function(){
 
     }
 },
+
 reset:function(){
     game.currentQuestion = 0;
     game.correct = 0;
